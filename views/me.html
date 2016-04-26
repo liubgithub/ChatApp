@@ -1,0 +1,29 @@
+﻿<ion-view view-title="我" class="ion-view-bg">
+    <ion-content>
+		<div class="list padding" id="container">
+			<!--<div class="list" align="center"  style="font-size: 130px">
+                <span class="{{userIcon.user.icon}}" ng-bind-html="userIcon.user.paths"></span>
+			</div>-->
+			<div class="list padding">
+			    <label class="item item-input">
+			        <span class="input-label SourceHanSansCN"  style="color:#5C6166;">用户名:</span>
+			  	    <input class="SourceHanSansCN" id="loginname" ng-model="loginname" type="text" placeholder="注册邮箱/用户名">
+			    </label>
+			    <label class="item item-input">
+			        <span class="input-label SourceHanSansCN" style="color:#5C6166;">密码:</span>
+			 	    <input class="SourceHanSansCN" id="loginpsd" ng-model="loginpsd" type="password" placeholder="登录密码">
+			    </label>
+		        <div class="positive-bg" style="height: 50px;">
+			        <a class="button button-block button-clear SourceHanSansCN" style="line-height: 2.5em; color:#FFFFFF;font-size:1.4em;" ng-click="loginIn(loginname,loginpsd)">登录</a>
+		        </div>
+		        <div class="row" style="height: 50px;">
+			        <a class="col button button-block button-clear SourceHanSansCN" style="color:#4878e6" href="#/register">没有注册&#32;?</a>
+			        <a class="col button button-block button-clear SourceHanSansCN" style="color:#4878e6" href="#/tab/me/psdmodify">忘记密码&#32;?</a>
+		        </div>
+
+                <div id="logintips" class="pop-tips SourceHanSansCN" ng-model="logintips">{{logintips}}</div>
+
+		   </div>
+		</div>
+    </ion-content>
+</ion-view>

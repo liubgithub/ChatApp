@@ -1,0 +1,19 @@
+<ion-view view-title="注册信息" class="ion-view-bg">
+    <ion-content>
+        <div class="list padding">
+            <label class="item item-input">
+                <input id="registryname" ng-model="registryname" placeholder="填写用户名，任意字母数字组合" type="text">
+            </label>
+            <label class="item item-input">
+                <input id="registrypsd" ng-model="registrypsd" placeholder="填写密码，长度不小于6位" type="password">
+            </label>
+            <label class="item item-input">
+                <input id="registryemail" ng-model="registryemail" placeholder="填写邮箱，用于账号密码找回" type="email">
+            </label>
+            <div class="positive-bg" style="height: 50px; margin-top:30px;" ng-click="registryControl(registryname,registrypsd,registryemail)">
+                <a class="button button-block button-clear" style="line-height: 2.5em; color:#FFFFFF;font-size:1.4em;">立即注册</a>
+            </div>
+            <div id="registrytips" class="pop-tips SourceHanSansCN" ng-model="registrytips">{{registrytips}}</div>
+        </div>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,20 @@
+﻿<ion-view view-title="好友列表" class="ion-view-bg">
+    <ion-content>
+        <div class="bar bar-header item-input-inset lehuo-border-color">
+            <label class="item-input-wrapper lehuo-border-color">
+                <span><i class="icon ion-android-search" style="font-size: 1.5em"></i></span>
+                <input type="search" id="userSearch" placeholder="输入好友名" ng-model="username">
+            </label>
+            <a class="button button-clear" style="color:#7a7a7a" ng-click="searchUser(username)">
+                搜索
+            </a>
+        </div>
+        <div class="list">
+            <a class="item item-avatar" href="#tab/chats/{{friend.name}}" ng-repeat="friend in friendList" ng-click="setFriend({{friend}})">
+                <img src="resource/images/101.png">
+                <h2>{{friend.nickName}}</h2>
+                <p>{{friend.signature}}</p>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>

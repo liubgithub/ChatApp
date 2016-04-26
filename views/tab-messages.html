@@ -1,0 +1,12 @@
+﻿<ion-view view-title="聊天记录" class="ion-view-bg">
+    <ion-content>
+        <div class="list">
+            <a class="item item-avatar" href="#tab/messages/{{msg.friend}}" ng-repeat="msg in MessageRecords">
+                <img src="resource/images/101.png">
+                <h2>{{msg.friendNickName}}</h2>
+                <p>{{msg.lastMessage.msg}}</p>
+                <i class="my-badge badge badge-assertive" ng-show="hasNoReadMessage(msg)">{{msg.newMessageNum}}</i>
+            </a>
+        </div>
+      </ion-content>
+</ion-view>

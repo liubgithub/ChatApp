@@ -1,0 +1,42 @@
+﻿<ion-view view-title="我" class="ion-view-bg">
+    <ion-content class="god-border-none">
+        <div class="borderless god-border-none">
+            <!--用户信息-->
+            <a class="item row positive-bg" style="height:140px;padding-top:15px;width:auto" href="#/tab/account/meDetails">
+                <div class="col-25" style="font-size:80px;margin-top:10px;">
+                    <span class="{{userIcon.user.icon}}" style="font-size:larger;" ng-bind-html="userIcon.user.paths"></span>
+                </div>
+                <div class="col-75 god-border-none" style="margin-left:25px;">
+                    <div class=" item-icon-right god-border-none" style="padding-top:25px;">
+                        <p class="SourceHanSansCN" style="line-height:1.5em;font-size:18px;color:#ffffff;">{{userName}}</p>
+                        <i class="icon ion-chevron-right" style="color:#ffffff;margin-left:20px;"></i>
+                    </div>
+                </div>
+            </a>
+            <!--相册-->
+            <a class="item item-icon-left item-icon-right  lehuo-border-color" style="margin:15px 0px 15px 0px;">
+                <span class="{{userIcon.memicrorel.icon}}" ng-bind-html="userIcon.memicrorel.paths" style="font-size:24px;"></span>
+                <p class="SourceHanSansCN" style="font-size:1.0em;color:#000000;top:20px;">相册</p>
+                <i class="icon small ion-chevron-right"></i>
+            </a>
+            <!--收藏-->
+            <a class="item item-icon-left item-icon-right  lehuo-border-color" href="#/tab/me/about" style="margin:0 0 15px 0;">
+                <span class="{{userIcon.about.icon}}" ng-bind-html="userIcon.about.paths" style="font-size:24px;"></span>
+                <span class="SourceHanSansCN" style="font-size:1.0em;color:#000000;">收藏</span>
+                <i class="icon small ion-chevron-right"></i>
+            </a>
+            <!--我的喜欢-->
+            <a class="item item-icon-left item-icon-right  lehuo-border-color" href="#">
+                <span class="{{userIcon.msg.icon}}" ng-bind-html="userIcon.msg.paths" style="font-size:24px;"></span>
+                <span class="SourceHanSansCN" style="font-size:1.0em;color:#000000;">我喜欢</span>
+                <i class="icon small ion-chevron-right"></i>
+            </a>
+            <!--设置-->
+            <a class="item item-icon-left item-icon-right  lehuo-border-color" style="margin: 15px 0 0 0;">
+                <span class="{{userIcon.setting.icon}}" ng-bind-html="userIcon.setting.paths" style="font-size: 24px; "></span>
+                <span class="SourceHanSansCN" style="font-size: 1.0em;">设置</span>
+                <i class="icon small ion-chevron-right"></i>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>

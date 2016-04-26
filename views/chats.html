@@ -1,0 +1,28 @@
+<ion-view view-title="Chats">
+  <ion-content class="padding" start-y="{{scrollPosition+168}}">
+  <section class="chats">
+      <span ng-repeat="message in messages">
+          <span ng-show="!message.notification">
+              <p class="username" ng-show="!messageIsMine(message.from)">{{message.from}}</p>
+              <div ng-class='getBubbleClass(message.from)'>
+                  <p ng-bind="message.msg"></p>
+              </div>
+              <div class="clear"></div>
+          </span>
+          <!--<span ng-show="message.notification">
+          <p class="notification" ng-bind="message.msg"></p>
+        </span>-->
+      </span>
+  </section>
+  </ion-content>
+    <!--keyboard-attach-->
+    <ion-footer-bar class="bar-stable item-input-inset message-footer" >
+        <label class="item-input-wrapper">
+            <!--<input id="msg-input" ng-change="updateTyping()" ng-model="message" class="input-message" type="text" placeholder="Message">-->
+            <input id="msg-input" ng-model="message" class="input-message" type="text" placeholder="Message"/>
+        </label>
+        <div class="footer-btn-wrap">
+            <button class="button button-icon icon ion-ios-paperplane footer-btn" type="submit" ng-click="sendMessage(message)" ng-disabled="!message || message === ''"></button>
+        </div>
+    </ion-footer-bar>
+</ion-view>

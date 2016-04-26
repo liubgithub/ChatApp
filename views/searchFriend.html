@@ -1,0 +1,26 @@
+﻿<ion-view title="设置" class="ion-view-bg">
+    <ion-content>
+        <a class="item item-avatar" href="#">
+            <img src="resource/images/101.png">
+            <h2>{{searchFriend.name}}</h2>
+        </a>
+        <a class="item" href="#">
+            <p>设置配置和标签</p>
+        </a>
+        <div class="list" style="top:10px">
+            <a class='item'>
+                地区
+                <span class="item-note">
+                    {{searchFriend.name}}
+                </span>
+            </a>
+            <a class='item'>
+                个性签名
+                <span class="item-note">
+                    {{searchFriend.name}}
+                </span>
+            </a>
+        </div>
+        <a class="button button-block button-balanced" style="margin-left:6px;margin-right:6px;top:10px;" ng-click="addFriend()">添加到通讯录</a>
+    </ion-content>
+</ion-view>

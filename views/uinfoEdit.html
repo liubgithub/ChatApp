@@ -1,0 +1,17 @@
+﻿<ion-modal-view class="ion-view-bg" cache-view="false">
+    <ion-header-bar class="bar-positive fix-buttons borderless lehuo-border-color">
+            <a class="button button-clear left SourceHanSansCN" ng-click="closeModal()">
+                取消
+            </a>
+            <a class="button button-clear right SourceHanSansCN" ng-click="closeModal('ok')">
+                保存
+            </a>
+    </ion-header-bar>
+    <ion-content class="lehuo-border-color" has-bouncing="true" scroll="true" overflow-scroll="true">
+        <div class="list padding-top">
+            <label class="item item-input">
+                <input id="input" type="{{currentItem.type}}" value="{{currentItem.value}}">
+            </label>
+        </div>
+    </ion-content>
+</ion-modal-view>

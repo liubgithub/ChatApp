@@ -1,0 +1,40 @@
+<ion-view title='我的资料' class="ion-view-bg">
+    <ion-content>
+        <div class="list padding-top SourceHanSansCN lehuo-border-color">
+            <a class='item item-icon-right lehuo-border-color'>
+                头像
+                <i class="icon ion-social-freebsd-devil"></i>
+            </a>
+            <a class='item lehuo-border-color' ng-repeat="item in settings1" ng-click="openModal(item)">{{item.text}}
+                <span class="item-note">{{item.value}}
+                </span>
+            </a>
+            <label class="item item-input item-select">
+                <div class="input-label">
+                    性别
+                </div>
+                <select id="genderselelct" ng-model="selectvalue" ng-change="genderSelect(selectvalue)">
+                    <option ng-selected="true">{{Gender.selected}}</option>
+                    <option>{{Gender.option}}</option>
+                </select>
+            </label>
+            <a class='item lehuo-border-color' ng-click="openModal(birthsetting)">
+                {{birthsetting.text}}
+                <span class="item-note">
+                    {{birthsetting.value}}
+                </span>
+            </a>
+        </div>
+        
+        <div class="list padding-top SourceHanSansCN lehuo-border-color">
+            <a class='item lehuo-border-color' ng-repeat="item in settings2" ng-click="openModal(item)">{{item.text}}
+                <span class="item-note">{{item.value}}
+                </span>
+            </a>
+        </div>
+
+        <a class="button button-block button-full button-assertive SourceHanSansCN" style="margin-left:6px;margin-right:6px" ng-click="loginOut()">
+            退出登录
+        </a>
+   </ion-content>
+</ion-view>
